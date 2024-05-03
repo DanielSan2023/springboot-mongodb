@@ -5,8 +5,8 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import java.util.Optional;
 
-public interface ExpenseRepository extends MongoRepository<Expense, String> {
 
+public interface ExpenseRepository extends MongoRepository<Expense, String> {
 
     Optional<Expense> findByExpenseName(String name);
 
